@@ -64,7 +64,7 @@ h1 {
     height: 60vh;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 0 20px 60px;
+    padding: 20px 20px 20px 60px;
     background-color: var(--White);
     border-radius: 20px;
 }
