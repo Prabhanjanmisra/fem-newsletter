@@ -11,7 +11,6 @@ This is a solution to the [Newsletter sign-up form with success message challeng
 - [My process](#my-process)
   - [Built with](#built-with)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -33,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Repository](https://your-solution-url.com)
-- Live Site URL: [Live site](https://your-live-site-url.com)
+- Solution URL: [Repository](https://github.com/Prabhanjanmisra/fem-newsletter)
+- Live Site URL: [Live site](https://prabhanjanmisra.github.io/fem-newsletter/)
 
 ## My process
 
