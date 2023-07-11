@@ -1,0 +1,289 @@
+:root {
+    --Tomato: hsl(4, 100%, 67%);
+    --Dark-Slate-Grey: hsl(234, 29%, 20%);
+    --Charcoal-Grey: hsl(235, 18%, 26%);
+    --Grey: hsl(231, 7%, 60%);
+    --White: hsl(0, 0%, 100%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--Charcoal-Grey);
+    color: var(--Dark-Slate-Grey);
+}
+
+a {
+    text-decoration: none;
+    color: var(--Tomato);
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+img {
+    width: 100%;
+}
+
+p {
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.hide {
+    display: none !important;
+}
+
+/* Container */
+
+.container {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-container {
+    display: flex;
+    height: 60vh;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0 20px 60px;
+    background-color: var(--White);
+    border-radius: 20px;
+}
+
+
+.flex-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 360px;
+    padding: 20px 0 30px;
+}
+
+li svg {
+    margin-right: 0.7rem;
+    transform: translate(0, 20%);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+form label {
+    font-size: 0.8rem;
+    transform: translate(0, 60%);
+    position: relative;
+    font-weight: 700;
+}
+
+form input {
+    height: 3rem;
+    border-radius: 10px;
+    border-style: solid;
+    padding: 0.7rem;
+}
+
+form button {
+    height: 3rem;
+    border-radius: 10px;
+    border-style: none;
+    background-color: var(--Dark-Slate-Grey);
+    color: var(--White);
+    font-weight: 700;
+    align-self: center;
+    width: 100%;
+}
+
+form button:hover {
+    background: linear-gradient(to right,hsl(4, 100%, 67%),hsl(17, 100%, 67%));
+    cursor: pointer;
+    box-shadow: 0 10px 20px hsla(4, 100%, 67%, 70%);
+}
+
+.invalid {
+    position: absolute;
+    right: 0;
+    color: var(--Tomato);
+    font-weight: 700;
+}
+
+.flex-img {
+    height: 100%;
+    margin-left: 50px;
+}
+
+.invalid-color {
+    color: var(--Tomato);
+    background-color: rgb(255, 183, 178);
+    border: solid;
+    border-color: var(--Tomato);
+}
+
+.mobile-img {
+    display: none;
+}
+
+
+
+/* Success page */
+
+.flex-2 {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--White);
+    gap: 20px;
+    padding: 50px;
+    width: 400px;
+    border-radius: 20px;
+}
+
+.btn {
+    height: 3rem;
+    border-radius: 10px;
+    border-style: none;
+    background-color: var(--Dark-Slate-Grey);
+    color: var(--White);
+    font-weight: 700;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.btn:hover {
+    background: linear-gradient(to right,hsl(4, 100%, 67%),hsl(17, 100%, 67%));
+    cursor: pointer;
+    box-shadow: 0 10px 20px hsla(4, 100%, 67%, 70%);
+}
+
+.clicked {
+    background: linear-gradient(to right,hsl(4, 100%, 67%),hsl(17, 100%, 67%));
+    box-shadow: 0 10px 20px hsla(4, 100%, 67%, 70%);
+    height: 45px;
+    width: 98%;
+}
+
+#entered-email {
+    font-weight: 700;
+}
+
+/* Attribution */
+
+.attribution {
+    display: flex;
+    flex-direction: row-reverse;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    color: var(--Dark-Slate-Grey);
+}
+
+#my-img {
+    height: 40px;
+    border-radius: 20px;
+}
+
+
+#hidden {
+    width: 150px;
+    background: var(--White);
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 12px;
+}
+
+
+
+@media(max-width: 700px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+        line-height: 1;
+    }
+
+    li {
+        font-size: 0.9rem;
+        margin-bottom: 0.2rem;
+    }
+    
+    .attribution {
+        display: none !important;
+    }
+
+    .container {
+        display: block;
+    }
+
+    .flex-container {
+        height: 100vh;
+        width: 100%;
+        flex-direction: column;
+        border-radius: 0;
+        padding: 0px;
+    }
+
+    .flex-img {
+        display: none;
+    }
+
+    .mobile-img {
+        display: block;
+        height: 40vh;
+    }
+
+    .flex-inner {
+        width: 90%;
+        margin: 20px 10px 30px 10px;
+    }
+
+    .flex-2 {
+        height: 100vh;
+        width: 100%;
+        gap: 50px;
+        border-radius: 0;
+        position: relative;
+    }
+
+    .flex-2 .btn {
+        position: absolute;
+        bottom: 30px;
+        right: 50%;
+        transform: translate(50%, 0);
+        width: 85%;
+    }
+
+    .flex-2 h1 {
+        font-size: 3rem;
+    }
+
+    .flex-2 p {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+}
+
+
+
